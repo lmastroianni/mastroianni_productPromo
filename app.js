@@ -13,9 +13,9 @@ app.get('/', (req, res) => {
   res.send('Vinyl app is live!');
 })
 
-/*app.get('/contact', (req, res) => {
+app.get('/contact', (req, res) => {
   res.send('on the contact page');
-})*/
+})
 
 app.listen(port, () => {
   console.log(`Server running at $(port)}`);
