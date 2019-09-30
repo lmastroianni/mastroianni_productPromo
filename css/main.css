@@ -1,9 +1,21 @@
 @charset "UTF-8";
 /*CSS Doc*/
+
 .hidden
 {
 	display: none;
 }
+
+#hide
+{
+  display: none;
+}
+
+/*makes responsive*/
+.responsive {
+	max-width: 100%;
+	height: auto;
+  }
 
 body{
 	font-family: Arial, Helvetica, sans-serif;
@@ -11,73 +23,155 @@ body{
 	line-height: 1.5;
 	padding: 0;
 	margin: 0;
-	background-color: #f4f4f4
+	background-color: #c2b28f;
 }
 
-.container{
+.container {
+	margin: 0 auto;
+	background-color: #fff;
+	max-width: 1200px;
+  }
 
-	width:80%;
-	margin: auto;
-	overflow: hidden;
-}
+  /* -------------------------------------------------------------------*/
 
 header {
-	background: #35424a;
+	background: #c2b28f;
 	color: #ffffff;
 	padding-top: 30px;
 	min-height: 70px;
-	border-bottom: #e8491d 3px solid;
+	border-bottom: #007291 3px solid;
 }
 
-header li a{
-	color: #ffffff;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 16px;
-}
 
-header ul{
-	margin: 0;
-	padding: 0;
-}
-
-header li{
-	float: left;
-	display: inline;
-	padding: 0 20px 0 20px;
-}
-
-header #branding{
-	float: left;
-}
-
-header #branding h1{
-	margin: 0;
-}
-
-header nav{
-	float:right;
-	margin-top: 10px;
-}
-
-header .highlight, header .current a{
-	color: #e8491d;
-	font-weight: bold;
-}
-
-header a:hover{
-	color: #cccccc;
-	font-weight: bold;
-}
-
-/* Showcaswe */
-
-#showcase
+#title
 {
-	min-height: 400px;
-	background:url('../img/zeppelin.jpg') no-repeat 0 400px;
+	font-size: 45px;
+	color: #e86f68;
+	text-align: center;
+	width: 100%;
 }
 
-#showcase img{
+/*body*/
+
+#body
+{
+	text-align: center;
+	color: #83b799;
+}
+
+#boxes h2
+{
+	font-size: 45px;
+	text-align: center;
+}
+
+
+
+.heroImage img
+{
 	width: 100%;
+}
+
+.heroimage p{
+	text-align:center;
+}
+
+
+
+/*#boxes img
+{
+	width: 80%;
+}*/
+
+
+/*footer*/
+
+#backToTopBut 
+{
+  background-color: #808080;
+  color: #fff;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  font-family: 'Averia Serif Libre', cursive;
+  
+}
+
+footerInfo a{
+	width: 100%;
+}
+
+@media screen and (min-width: 540px)  {
+
+	#boxes h2 
+	{
+		font-size: 60px
+	}
+
+	.heroImage p
+	{
+		font-size: 20px;
+	}
+
+	#title
+	{
+		font-size: 60px;
+	}
+}
+
+
+@media screen and (min-width: 640px) {
+
+	#boxes 
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.box2 h2
+	{
+		margin-right: 30px;
+	}
+
+	.box1 h2
+	{
+		margin-right: 10px;
+	}
+	
+	.box1{
+		margin-top: 80px;
+	}
+	
+	.box2 h2 
+	{
+		width: 100%;
+	}
+
+
+	#backToTopBut
+	{
+		display: none;
+	}
+
+
+}
+
+
+@media screen and (min-width: 900px)
+{
+	.heroImage img {
+		height:400px;
+		width: 100%;
+	}
+}
+
+
+
+.roundShadow
+{
+	{
+		box-shadow: 10px -10px #CCC;
+	  }
 }
